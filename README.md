@@ -1,4 +1,14 @@
-## ASTRO STUFF
+# DES222 FRONT END
+
+TO DO:
+
+- [ ] MAIN PAGE
+- [ ] LOGIN PAGE
+- [ ] SETTINGS PAGE
+- [ ] CHATROOM PAGE
+- [ ] LINK EVERYTHING TO DB AND WATCH
+
+#### ASTRO STUFF
 <details markdown="1">
 
 # Astro Starter Kit: Basics
