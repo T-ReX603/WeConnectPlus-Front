@@ -1,9 +1,6 @@
-import { defineConfig } from 'astro/config';
-
-// https://astro.build/config
-export default defineConfig({});
+import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: 'https://celestialcece.github.io',
-  base: '/WeConnectPlus-Front',
+  site: 'https://astronaut.github.io',
+  base: '/my-repo',
 })
