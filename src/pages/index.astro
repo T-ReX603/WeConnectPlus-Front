@@ -3,32 +3,56 @@ import SiteLayout from '../layouts/Layout.astro';
 ---
 
 <SiteLayout>
-    <div class="Name">
-        <p>
-            <img src="./src/Img/Placeholders/LogoPlaceholder.png" class="Logo">
+    <div>
+        <p style="margin-block-start: 1em;
+        margin-block-end: 0.4em;">
+            <img src="./src/Img/Placeholders/LogoPlaceholder.png" class="Logo" >
         </p>
-        <p>WeConnect+</p>
+        <p class="LP">WeConnect+</p>
     </div>
     <div class="BoxUnder">
         <div class="Login">
-            <p>Lets <span class="Connect">Connect</span></p>
-            <p>
-                <input>
+            <p class="LetsConnect">
+                Lets <span class="Connect">Connect</span>
             </p>
             <p>
-                <input>
-                <p>
+                <input type='text' placeholder="EMAIL ADDRESS" class="Email" style="font-size: 24px;">
+            </p>
+            <p style="margin-block-start: 0.5em;
+            margin-block-end: 0.4em;">
+                <input type='text' class="Password" placeholder="PASSWORD" style="font-size: 24px;">
+                <p class="ForgotPass">
                     <span class="Pass">Forgot Password? </span><a class="Click" href="https://www.youtube.com/watch?v=vpX67n9zJVk">Click Here</a>
                 </p>
             </p>
-            
+            <p class="PButt">
+                <button class="LoginButt">LOGIN</button>
+            </p>
+            <p class="WTC">
+                Want to connect? <a class="SignUp" href="https://celestialcece.github.io">Sign Up Here</a>
+            </p>
         </div>
     </div>
     <style>
         body {
-            background-color: #3db086;
             text-align: center;
-            color: white;
+            font-size: 40px;
+        }
+
+        .LetsConnect {
+            padding-bottom: 1em;
+        }
+
+        .LP {
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+            font-size: 48px;
+
+        }
+
+        .Logo {
+            width: 4%;
+		    object-fit: cover;
         }
 
         .Connect {
@@ -44,6 +68,83 @@ import SiteLayout from '../layouts/Layout.astro';
             text-decoration: none;
         }
 
+        .BoxUnder {
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.20); 
+            width: 25%;
+            height: auto;
+            margin: auto;
+
+
+        }
+
+
+        .Email{
+            width: 310px;
+            height: 50px;
+            flex-shrink: 0;
+            opacity: 0.6;
+            border: 1px solid #F6F6F6;
+            background: #FFFEFE;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            color: black;
+
+        }
+
+        .Password{
+            width: 310px;
+            height: 50px;
+            flex-shrink: 0;
+            opacity: 0.6;
+            border: 1px solid #F6F6F6;
+            background: #FFFEFE;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            color: black;
+        }
+
+        .ForgotPass {
+            font-size: 12px;
+            padding-left: 13em;
+        }
+
+        .LoginButt {
+            
+            color: #3EB489;
+            font-size: 32px;
+            font-weight: 400;
+            font-family: Staatliches;
+            border-radius: 25px;
+            background: #FAF6F6;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 313px;
+            height: 60px;
+            border: 1px solid #f6f6f600;
+            cursor: pointer;
+		    transition-duration: 0.2s;
+        }
+
+        .LoginButt:hover {
+            background: #3eb489;
+            color: white;
+        }
+
+        .PButt {
+            padding-top: 2.1em;
+            padding-bottom: 1em;
+        }
+
+        .SignUp {
+            color: white;
+            text-decoration: underline;
+            
+        }
+
+        .WTC {
+            font-size: 16px;
+            padding-bottom: 2.3em;
+        }
     </style>
 </SiteLayout>
 
