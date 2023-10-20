@@ -1,25 +1,49 @@
 ---
 import SiteLayout from '../layouts/Layout.astro';
 ---
-<SiteLayout>
 
-<div class="content">
-	<div class="NATUNDER">
-	<img src="./src/Img/Placeholders/Placeholder.png" class="Image"/>
-		<div class="NATOVER">
-		<h1>NAME (AGE)</h1>
-		<p>WeConnect Through:</p>
-		<p class="tags">Placeholder tag <img src="./src/Img/Placeholders/Placeholder2.gif"/></p>
-		</div>
-	</div>
-	<div class="ABT">
-		<p>
-			<h3>About Me:</h3>
-			<p>PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER </p>
-		</p>
-	</div>
-	<div class="LCT">
-		<button class="LCB">Lets Chatter</button>
-	</div>
-</div>
+<SiteLayout>
+    <div class="Name">
+        <p>
+            <img src="./src/Img/Placeholders/LogoPlaceholder.png" class="Logo">
+        </p>
+        <p>WeConnect+</p>
+    </div>
+    <div class="BoxUnder">
+        <div class="Login">
+            <p>Lets <span class="Connect">Connect</span></p>
+            <p>
+                <input>
+            </p>
+            <p>
+                <input>
+                <p>
+                    <span class="Pass">Forgot Password? </span><a class="Click" href="https://www.youtube.com/watch?v=vpX67n9zJVk">Click Here</a>
+                </p>
+            </p>
+            
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: #3db086;
+            text-align: center;
+            color: white;
+        }
+
+        .Connect {
+            text-decoration: underline;
+        }
+
+        .Pass {
+            color: black;
+        }
+
+        .Click {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
 </SiteLayout>
+
