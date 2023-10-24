@@ -1,0 +1,42 @@
+---
+import SiteLayout from '../layouts/Layout.astro';
+---
+
+<SiteLayout>
+    <div>
+        <h1>Lets Connect</h1> <img class="pfp" src="./src/Img/Placeholders/pfplaceholder.png"/>
+    </div>
+    <div class="parent">
+        <div class="wide">Wide (rest of width)</div>
+        <div class="narrow">Narrow (200px)</div>
+    </div>
+    <style>
+        .pfp {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .parent {
+            display: flex;
+        }
+
+        .narrow {
+            width: 200px;
+            align-items: flex-end;
+            justify-content: right;
+            background: rgba(255, 254, 254, 0.80);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+        .wide {
+
+            background-color: rgba(255, 254, 254, 0.80);
+        }
+
+        .space {
+            height: 5em;
+        }
+
+    </style>
+</SiteLayout>
