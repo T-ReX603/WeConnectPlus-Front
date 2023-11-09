@@ -3,40 +3,168 @@ import SiteLayout from '../layouts/Layout.astro';
 ---
 
 <SiteLayout>
-    <div>
-        <h1>Lets Connect</h1> <img class="pfp" src="./src/Img/Placeholders/pfplaceholder.png"/>
+    <div class="title">
+        <h1 class="text">Lets Connect</h1> <img class="pfp" src="./src/Img/Placeholders/pfplaceholder.png"/>
     </div>
-    <div class="parent">
-        <div class="wide">Wide (rest of width)</div>
-        <div class="narrow">Narrow (200px)</div>
+    <div class="container">
+        <div class="connections">
+            <div class="ConTitle">YOUR CONNECTIONS</div>
+            <div class="Posts">
+                <div class="PostCont">
+                    <img class="PostPFP" src="./src/Img/Placeholders/LogoPlaceholder.png"/>
+                    <div class="PostSub">
+                        <div class="Name">John Doe - Connected x ago</div>
+                        <div class="Message">I dunno I'd have to be honest i don't like chips</div>
+                    </div>
+                    <div class="Read"><img  src="./src/Img/Vectortick.png"/></div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="Download">
+                <div class="DownTitle"><span class="test">Download the Mobile App on Apple or Android Devices</span></div>
+                <img class="Logo" src="./src/Img/Placeholders/LogoPlaceholder.png"/>
+            </div>
+            <div class="QR">
+                <img class="Logo" src="./src/Img/Placeholders/qrcode.png"/>
+                <div class="DownTitle"><span class="test">Scan Here for profile share</span></div>
+            </div>
+            </div>
+        </div>
     </div>
     <style>
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-left: 3em;
+            
+          
+        }
+
+        .text {
+            color: white;
+            font-size: 5em;
+        }
+
         .pfp {
             border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
-
-        .parent {
-            display: flex;
-        }
-
-        .narrow {
-            width: 200px;
-            align-items: flex-end;
-            justify-content: right;
-            background: rgba(255, 254, 254, 0.80);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-        .wide {
-
-            background-color: rgba(255, 254, 254, 0.80);
-        }
-
-        .space {
+            width: 5em;
             height: 5em;
+            margin-left: 2em;
         }
 
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1em;
+            color: black;
+        }
+
+        
+
+        .connections {
+            background: rgba(255, 253.94, 253.94, 0.80);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            border: 1px #F6F6F6 solid;
+            width: 140vh;
+            height: 80vh;
+            margin-left: 3em;
+        }
+
+        .ConTitle {
+            margin-top: 1.5em;
+            margin-left: 2em;
+            font-size: 2.25em;
+        }
+
+        .Posts{
+            font-size: 2.25em;
+            margin-top: 1.5em;
+            margin-left: 2em;
+            margin-right: 2em;
+            border-radius: 9px;
+            background: white;
+            height: 6vh;
+        }
+
+        .PostCont {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        .PostPFP {
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+        }
+
+        .PostSub {
+            margin-left: 2em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Name {
+            font-size: 0.7em;
+        }
+
+        .Message {
+            margin-top: 0.4em;
+            font-size: 0.4em;
+            font-family: Arial;
+        }
+        
+        .Read {
+            margin-left: auto;
+            width: 1em;
+            height: 1em;
+        }
+
+        .sub-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3em;
+        }
+
+
+        .Download {
+            text-align: center;
+            background: rgba(255, 253.94, 253.94, 0.80);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            border: 1px #F6F6F6 solid;
+            width: 45vh;
+            height: 35vh;
+        }
+
+        .DownTitle {
+            margin-left: 3em;
+            margin-right: 3em;
+            margin-top: 1em;
+            font-size: 2.25em;
+        }
+
+        .Logo {
+            margin-top: 3em;
+            width: 15em;
+            height: 15em;
+            
+        }
+
+        .QR {
+            background: rgba(255, 253.94, 253.94, 0.80);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            border: 1px #F6F6F6 solid;
+            margin-top: 10vh;
+            width: 45vh;
+            height: 35vh;
+        }
     </style>
 </SiteLayout>
