@@ -2,166 +2,251 @@
 import SiteLayout from '../layouts/Layout.astro';
 ---
 <SiteLayout>
-
-<div class="content">
-	<div class="NATUNDER">
-	<img src="./src/Img/Placeholders/Placeholder.png" class="Image"/>
-		<div class="NATOVER">
-		<h1>NAME (AGE)</h1>
-		<p>WeConnect Through:</p>
-		<p class="tags">Placeholder tag <img src="./src/Img/Placeholders/Placeholder2.gif"/></p>
+<div class="title">
+	<h1 class="text">Profile Match</h1>
+</div>
+<div class="container">
+	<div class="connections">
+		<img class="Image" src="./src/Img/Placeholders/Placeholder.png"/>
+	</div>
+	<div class="Content">
+		<h1 class="Name">James</h1>
+		<h2 class="AgeRange">(18-24)</h2>
+		<h3 class="ConnectThrough">weconnect through:</h3>
+		<div class="tags">
+			<ul class="TagList">
+				<li class="Gamer">Gamer <img class="GamerImg"src="./src/Img/gamer.svg"/></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="AbtMe">About ME:</h3>
+			<p class="AbtMeContent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+		</div>
+		<div class="ButtContainer">
+			<button class="LetsChatter">Lets Chatter <img class="ButtImg"src="./src/Img/Chatter.png"/></button>
+		</div>
+		<div class="NavBarContainer">
+			<ul class="NavBar">
+				<li class="NavIcon"><a href="#Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
+				<li class="NavIcon"><a href="./MainPage" class="NavButtLink"><img class="NavButt" src="./src/Img/Placeholders/LogoPlaceholder.png"/></a></li>
+				<li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
+			</ul>
 		</div>
 	</div>
-	<div class="ABT">
-		<p>
-			<h3>About Me:</h3>
-			<p>PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER </p>
-		</p>
-	</div>
-	<div class="LCT">
-		<button class="LCB">Lets Chatter</button>
-	</div>
 </div>
-<div class="WeConnect">
-	<p>WeConnect+</p>
 </div>
+
 <style>
 	/* MOBILE 
 	---------------------------------------------------------------------
 	*/
 
-	body{
-		margin: 0px
-	}
 
-	.Image {
-		width: 100%;
-		object-fit: cover;
-	}
 
-	.NATOVER {
-		position: absolute;
-		font-weight: bold;
-		color: white;
-		top: 50%;
-		padding-left: 1em
-	}
-
-	.tags {
-		width: 100%;
-		color: white;
-		font-weight: bold;
-		border-radius: 5px;
-  		background-color: #29b5a4;
-	}
-	
-	.ABT {
-		padding-left: 1em
-	}
-
-	.WeConnect {
-		text-align: center;
-		font-size: 2em;
-		font-weight: bold;
-		color: #fff;
-		background-color: #23a9c7;
-	}
-
-	.LCT {
-		text-align: center;
-	}
-	
-	.LCB {
-		font-size: 2em;
-		font-weight: bold;
-		padding: 2% 24%;
-		border: none;
-		outline: none;
-		color: white;
-		background: #23a9c7;
-		cursor: pointer;
-		position: relative;
-		z-index: 0;
-		border-radius: 10px;
-		user-select: none;
-		-webkit-user-select: none;
-		touch-action: manipulation;
-		transition-duration: 0.2s;
-	}
-
-	.LCB:hover {
-		background: #1c8ba9;
-	}
-
-/* DESKTOP 
-------------------------------------------------------------------------
-*/
+	/* DESKTOP 
+	------------------------------------------------------------------------
+	*/
 
 
 	@media (min-width: 75em){
 		body{
-		margin: 0px
-	}
+			margin: 0px
+		}
+
+		.title {
+            display: flex;
+            align-items: center;
+            margin-left: 3em;
+        }
+		
+		.text {
+            color: white;
+            font-size: 5em;
+        }
+
+
+		.container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1em;
+            color: black;
+        }
 
 	.Image {
-		height: 100vh;
-		object-fit: fill;
+		margin-left: 3em;
+		height: 80vh;
+		width: 80vh;
+		object-fit: cover;
+		background: rgba(255, 253.94, 253.94, 0.80); 
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+		border-radius: 3px; 
 	}
 
-	.NATOVER {
-		position: absolute;
-		font-weight: bold;
-		color: white;
-		top: 50%;
-		padding-left: 1em
+	.Content {
+		height: 80vh;
+		width: 112vh;
+		background: rgba(255, 253.94, 253.94, 0.80); 
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+		border-radius: 3px; 
+
+	}
+
+	.Name {
+		font-size: 4em;
+		margin-left: 1em;
+		margin-top: 0.5em;
+		margin-bottom: 0em;
+	}
+
+	.AgeRange {
+		font-size: 2em;
+		margin-left: 2em;
+		margin-top: 0em;
+	}
+
+	.ConnectThrough {
+		font-size: 2em;
+		margin-left: 2em;
+		margin-top: 1.6em;
+		margin-bottom: 0em;
 	}
 
 	.tags {
-		width: 100%;
+		margin: 0.5em;
+	}
+
+	.TagList {
+		margin: 0em;
+		width: 9em;
+		
+	}
+
+	.Gamer {
 		color: white;
-		font-weight: bold;
-		border-radius: 5px;
-  		background-color: #29b5a4;
+		display: block;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		margin-left: 0.9em;
+		background: #4680F0; 
+		border-radius: 15px;
+		padding-left: 1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		font-size: 1em;
+	}
+
+	.GamerImg {
+		width: 3vh;
+		margin-left: 1.5em;
+		margin-right: 1em;
+	}
+
+	.AbtMe {
+		margin-top: 5em;
+		margin-left: 2em;
+		font-size: 2em;
+		margin-bottom: 0.3em;
+	}
+
+	.AbtMeContent {
+		margin-top: 0em;
+		margin-left: 4em;
+	}
+
+	.ButtContainer {
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: center;
+		margin-top: 15em;
+		
+
+	}
+
+	.LetsChatter {
+		display: flex;
+            justify-content: space-evenly;
+			text-align: center;
+			align-items: center;
+			border: none;
+			background: #3AE27D; 
+			border-radius: 30px;
+			font-family: Staatliches;
+			color: white;
+			font-size: 2em;
+			padding-left: 5em;
+			padding-right: 4em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			transition-duration: 0.2s;
+
+	}
+
+	.LetsChatter:hover {
+            background: #3eb489;
+            color: white;
+			cursor: pointer;
 	}
 	
-	.ABT {
-		padding-left: 1em
-	}
-
-	.WeConnect {
+	.ButtImg {
 		text-align: center;
-		font-size: 2em;
-		font-weight: bold;
-		color: #fff;
-		background-color: #23a9c7;
+            width: 4vh;
+            height: 4vh;
+		padding-left: 1em;
+		
+		
 	}
 
-	.LCT {
+	.NavBarContainer {
+		padding-top: 2em;
 		text-align: center;
-	}
-	
-	.LCB {
-		font-size: 2em;
-		font-weight: bold;
-		padding: 2% 24%;
-		border: none;
-		outline: none;
-		color: white;
-		background: #23a9c7;
-		cursor: pointer;
-		position: relative;
-		z-index: 0;
-		border-radius: 10px;
-		user-select: none;
-		-webkit-user-select: none;
-		touch-action: manipulation;
-		transition-duration: 0.2s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
-	.LCB:hover {
-		background: #1c8ba9;
-	}
+	.NavBar {
+		text-align: center;
+            list-style-type: none;
+			display: flex;
+			justify-content: space-evenly;
+			text-align: center;
+			align-items: center;
+			flex-wrap: wrap;
+            margin: 0;
+            overflow: hidden;
+            width: 40%;
+            background: rgba(255, 253.94, 253.94, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 1px; border: 1px #F6F6F6 solid;
+			padding-left: 0em;
+        }
 
+        .NavIcon {
+
+        float: left;
+        }
+
+        .NavIcon .NavButtLink {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top:  16px;
+        padding-bottom:  16px;
+        text-decoration: none;
+        }
+
+        .NavButt:hover{
+        background: rgba(0, 0, 0, 0.05); 
+        border-radius: 25%;
+    }
+
+        .NavButt {
+
+            width: 5vh;
+            height: 5vh;
+        }
 }
 </style>
 </SiteLayout>

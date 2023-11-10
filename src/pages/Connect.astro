@@ -32,14 +32,16 @@ import SiteLayout from '../layouts/Layout.astro';
             </div>
         </div>
     </div>
+        <ul class="NavBar">
+            <li class="NavIcon"><a href="#Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
+            <li class="NavIcon"><a href="./MainPage" class="NavButtLink"><img class="NavButt" src="./src/Img/Placeholders/LogoPlaceholder.png"/></a></li>
+            <li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
+        </ul>
     <style>
-
         .title {
             display: flex;
             align-items: center;
             margin-left: 3em;
-            
-          
         }
 
         .text {
@@ -54,15 +56,12 @@ import SiteLayout from '../layouts/Layout.astro';
             margin-left: 2em;
         }
 
-
         .container {
             display: flex;
             flex-wrap: wrap;
             margin-top: 1em;
             color: black;
         }
-
-        
 
         .connections {
             background: rgba(255, 253.94, 253.94, 0.80);
@@ -132,7 +131,6 @@ import SiteLayout from '../layouts/Layout.astro';
             margin-left: 3em;
         }
 
-
         .Download {
             text-align: center;
             background: rgba(255, 253.94, 253.94, 0.80);
@@ -158,6 +156,7 @@ import SiteLayout from '../layouts/Layout.astro';
         }
 
         .QR {
+            text-align: center;
             background: rgba(255, 253.94, 253.94, 0.80);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 3px;
@@ -166,5 +165,49 @@ import SiteLayout from '../layouts/Layout.astro';
             width: 45vh;
             height: 35vh;
         }
+        
+
+        .NavBar {
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 20%;
+            margin: 3% auto; 
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-evenly;
+            background: rgba(255, 253.94, 253.94, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 1px; border: 1px #F6F6F6 solid;
+            padding-left: 0em;
+        }
+
+        .NavIcon {
+        float: left;
+        }
+
+        .NavIcon .NavButtLink {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top:  16px;
+        padding-bottom:  16px;
+        text-decoration: none;
+        }
+
+        .NavButt:hover{
+        background: rgba(0, 0, 0, 0.05); 
+        border-radius: 25%;
+    }
+
+        .NavButt {
+            text-align: center;
+            width: 5vh;
+            height: 5vh;
+        }
+
     </style>
 </SiteLayout>
