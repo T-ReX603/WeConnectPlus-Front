@@ -28,7 +28,7 @@ import SiteLayout from '../layouts/Layout.astro';
 		<div class="NavBarContainer">
 			<ul class="NavBar">
 				<li class="NavIcon"><a href="#Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
-				<li class="NavIcon"><a href="./MainPage" class="NavButtLink"><img class="NavButt" src="./src/Img/Placeholders/LogoPlaceholder.png"/></a></li>
+				<li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Placeholders/LogoPlaceholder.png"/></a></li>
 				<li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
 			</ul>
 		</div>
@@ -41,7 +41,205 @@ import SiteLayout from '../layouts/Layout.astro';
 	---------------------------------------------------------------------
 	*/
 
+	body {
+		margin: 0em;
+	}
 
+	.title {
+            display: flex;
+            align-items: center;
+            margin-left: 0em;
+			size: 0em;
+			font-size: 0em;
+			margin: 0em;
+        }
+		
+		.text {
+            color: white;
+            font-size: 5em;
+        }
+
+
+		.container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0em;
+            color: black;
+        }
+
+	.Image {
+		margin-top: 0em;
+		margin-left: 0em;
+		height: 70vh;
+		width: auto;
+		object-fit: cover;
+	}
+
+	.Content {
+		height: 80vh;
+		width: 112vh;
+		background: rgba(255, 253.94, 253.94, 0.80); 
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+		border-radius: 3px; 
+
+	}
+
+	.Name {
+		font-size: 4em;
+		margin-left: 1em;
+		margin-top: 0.5em;
+		margin-bottom: 0em;
+	}
+
+	.AgeRange {
+		font-size: 2em;
+		margin-left: 2em;
+		margin-top: 0em;
+	}
+
+	.ConnectThrough {
+		font-size: 2em;
+		margin-left: 2em;
+		margin-top: 1.6em;
+		margin-bottom: 0em;
+	}
+
+	.tags {
+		margin: 0.5em;
+	}
+
+	.TagList {
+		margin: 0em;
+		width: 9em;
+		
+	}
+
+	.Gamer {
+		color: white;
+		display: block;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		margin-left: 0.9em;
+		background: #4680F0; 
+		border-radius: 15px;
+		padding-left: 1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		font-size: 1em;
+	}
+
+	.GamerImg {
+		width: 3vh;
+		margin-left: 1.5em;
+		margin-right: 1em;
+	}
+
+	.AbtMe {
+		margin-top: 5em;
+		margin-left: 2em;
+		font-size: 2em;
+		margin-bottom: 0.3em;
+	}
+
+	.AbtMeContent {
+		margin-top: 0em;
+		margin-left: 4em;
+	}
+
+	.ButtContainer {
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: center;
+		margin-top: 15em;
+		
+
+	}
+
+	.LetsChatter {
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: center;
+		border: none;
+		background: #3AE27D; 
+		border-radius: 30px;
+		font-family: Staatliches;
+		color: white;
+		font-size: 2em;
+		padding-left: 5em;
+		padding-right: 4em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		transition-duration: 0.2s;
+
+	}
+
+	.LetsChatter:hover {
+            background: #3eb489;
+            color: white;
+			cursor: pointer;
+	}
+	
+	.ButtImg {
+		text-align: center;
+            width: 4vh;
+            height: 4vh;
+		padding-left: 1em;
+		
+		
+	}
+
+	.NavBarContainer {
+		padding-top: 2em;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.NavBar {
+		text-align: center;
+            list-style-type: none;
+			display: flex;
+			justify-content: space-evenly;
+			text-align: center;
+			align-items: center;
+			flex-wrap: wrap;
+            margin: 0;
+            overflow: hidden;
+            width: 40%;
+            background: rgba(255, 253.94, 253.94, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 1px; border: 1px #F6F6F6 solid;
+			padding-left: 0em;
+        }
+
+        .NavIcon {
+
+        float: left;
+        }
+
+        .NavIcon .NavButtLink {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top:  16px;
+        padding-bottom:  16px;
+        text-decoration: none;
+        }
+
+        .NavButt:hover{
+        background: rgba(0, 0, 0, 0.05); 
+        border-radius: 25%;
+    }
+
+        .NavButt {
+
+            width: 5vh;
+            height: 5vh;
+        }
 
 	/* DESKTOP 
 	------------------------------------------------------------------------
@@ -57,6 +255,7 @@ import SiteLayout from '../layouts/Layout.astro';
             display: flex;
             align-items: center;
             margin-left: 3em;
+			font-size: 1em;
         }
 		
 		.text {
@@ -68,7 +267,7 @@ import SiteLayout from '../layouts/Layout.astro';
 		.container {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 1em;
+            margin-top: 0em;
             color: black;
         }
 
@@ -160,42 +359,37 @@ import SiteLayout from '../layouts/Layout.astro';
 		text-align: center;
 		align-items: center;
 		margin-top: 15em;
-		
-
 	}
 
 	.LetsChatter {
 		display: flex;
-            justify-content: space-evenly;
-			text-align: center;
-			align-items: center;
-			border: none;
-			background: #3AE27D; 
-			border-radius: 30px;
-			font-family: Staatliches;
-			color: white;
-			font-size: 2em;
-			padding-left: 5em;
-			padding-right: 4em;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-			transition-duration: 0.2s;
-
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: center;
+		border: none;
+		background: #3AE27D; 
+		border-radius: 30px;
+		font-family: Staatliches;
+		color: white;
+		font-size: 2em;
+		padding-left: 5em;
+		padding-right: 4em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		transition-duration: 0.2s;
 	}
 
 	.LetsChatter:hover {
-            background: #3eb489;
-            color: white;
-			cursor: pointer;
+		background: #3eb489;
+		color: white;
+		cursor: pointer;
 	}
 	
 	.ButtImg {
 		text-align: center;
-            width: 4vh;
-            height: 4vh;
+		width: 4vh;
+		height: 4vh;
 		padding-left: 1em;
-		
-		
 	}
 
 	.NavBarContainer {
@@ -208,45 +402,43 @@ import SiteLayout from '../layouts/Layout.astro';
 
 	.NavBar {
 		text-align: center;
-            list-style-type: none;
-			display: flex;
-			justify-content: space-evenly;
-			text-align: center;
-			align-items: center;
-			flex-wrap: wrap;
-            margin: 0;
-            overflow: hidden;
-            width: 40%;
-            background: rgba(255, 253.94, 253.94, 0.80); 
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-            border-radius: 1px; border: 1px #F6F6F6 solid;
-			padding-left: 0em;
-        }
+		list-style-type: none;
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0;
+		overflow: hidden;
+		width: 40%;
+		background: rgba(255, 253.94, 253.94, 0.80); 
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+		border-radius: 1px; border: 1px #F6F6F6 solid;
+		padding-left: 0em;
+	}
 
-        .NavIcon {
+	.NavIcon {
+		float: left;
+	}
 
-        float: left;
-        }
+	.NavIcon .NavButtLink {
+		display: block;
+		color: white;
+		text-align: center;
+		padding-top:  16px;
+		padding-bottom:  16px;
+		text-decoration: none;
+	}
 
-        .NavIcon .NavButtLink {
-        display: block;
-        color: white;
-        text-align: center;
-        padding-top:  16px;
-        padding-bottom:  16px;
-        text-decoration: none;
-        }
-
-        .NavButt:hover{
-        background: rgba(0, 0, 0, 0.05); 
-        border-radius: 25%;
+	.NavButt:hover{
+		background: rgba(0, 0, 0, 0.05); 
+		border-radius: 25%;
     }
 
-        .NavButt {
-
-            width: 5vh;
-            height: 5vh;
-        }
+	.NavButt {
+		width: 5vh;
+		height: 5vh;
+	}
 }
 </style>
 </SiteLayout>

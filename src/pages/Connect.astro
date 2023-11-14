@@ -34,10 +34,199 @@ import SiteLayout from '../layouts/Layout.astro';
     </div>
         <ul class="NavBar">
             <li class="NavIcon"><a href="#Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
-            <li class="NavIcon"><a href="./MainPage" class="NavButtLink"><img class="NavButt" src="./src/Img/Placeholders/LogoPlaceholder.png"/></a></li>
+            <li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Placeholders/LogoPlaceholder.png"/></a></li>
             <li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
         </ul>
     <style>
+        /* MOBILE 
+	---------------------------------------------------------------------
+	*/
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-left: 1em;
+        }
+
+        .text {
+            color: white;
+            font-size: 2em;
+        }
+
+        .pfp {
+
+            border-radius: 50%;
+            width: 5em;
+            height: 5em;
+            margin-left: 30%;
+            
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1em;
+            color: black;
+        }
+
+        .connections {
+            background: rgba(255, 253.94, 253.94, 0.80);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            border: 1px #F6F6F6 solid;
+            width: 25em;
+            height: 30em;
+
+        }
+
+        .ConTitle {
+            margin-top: 0em;
+            margin-left: 0em;
+            font-size: 0em;
+        }
+
+        .Posts{
+            text-align: left;
+            display: block;
+            font-size: 2.25em;
+            margin-top: 0.2em;
+            margin-left: 0.1em;
+            margin-right: 0.1em;
+            border-radius: 9px;
+            background: white;
+            height: 3em;
+        }
+
+        .PostCont {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: 0em;
+            margin-right: 0em;
+        }
+
+        .PostPFP {
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+            margin-left: 0.4em;
+        }
+
+        .PostSub {
+            margin-left: 0.5em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Name {
+            font-size: 0.6em;
+        }
+
+        .Message {
+            margin-top: 0.4em;
+            font-size: 0.3em;
+            font-family: Arial;
+        }
+        
+        .Read {
+            margin-left: auto;
+            width: 1em;
+            height: 1em;
+        }
+
+        .sub-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3em;
+        }
+
+        .Download {
+            text-align: center;
+            background: rgba(255, 253.94, 253.94, 0.80);
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 0px;
+            border: 0px #F6F6F6 solid;
+            width: 0em;
+            height: 0em;
+        }
+
+        .DownTitle {
+            margin-left: 0em;
+            margin-right: 0em;
+            margin-top: 0em;
+            font-size: 0em;
+        }
+
+        .Logo {
+            margin-top: 0em;
+            width: 0em;
+            height: 0em;
+            
+        }
+
+        .QR {
+            text-align: center;
+            background: rgba(255, 253.94, 253.94, 0.80);
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 0px;
+            border: 0px #F6F6F6 solid;
+            margin-top: 0em;
+            width: 0em;
+            height: 0em;
+        }
+        
+
+        .NavBar {
+            list-style-type: none;
+            margin: 0;
+            width: 25em;
+            margin: 3% auto; 
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-evenly;
+            background: rgba(255, 253.94, 253.94, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 1px; border: 1px #F6F6F6 solid;
+            padding-left: 0em;
+        }
+
+        .NavIcon {
+        float: left;
+        }
+
+        .NavIcon .NavButtLink {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top:  16px;
+        padding-bottom:  16px;
+        text-decoration: none;
+        }
+
+        .NavButt:hover{
+        background: rgba(0, 0, 0, 0.05); 
+        border-radius: 25%;
+    }
+
+        .NavButt {
+            text-align: center;
+            width: 5vh;
+            height: 5vh;
+        }
+
+    
+
+    /* DESKTOP 
+	------------------------------------------------------------------------
+	*/
+
+    @media (min-width: 75em){
+		body{
+			margin: 0px
+		}
+
         .title {
             display: flex;
             align-items: center;
@@ -209,5 +398,6 @@ import SiteLayout from '../layouts/Layout.astro';
             height: 5vh;
         }
 
+    }
     </style>
 </SiteLayout>
