@@ -1,8 +1,12 @@
 ---
+import Bubbles from '../components/Bubbles.astro';
 import SiteLayout from '../layouts/Layout.astro';
+
+
 ---
 
 <SiteLayout>
+    <div id="tsparticles"></div>
     <div>
         <p style="margin-block-start: 1em;
         margin-block-end: 0.4em;">
@@ -38,7 +42,53 @@ import SiteLayout from '../layouts/Layout.astro';
             </p>
         </div>
     </div>
+
+
+
+    <Bubbles />
+
+
+
     <style>
+.Logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+	object-fit: cover;
+}
+.LoginButt {
+            
+            color: #3EB489;
+            font-size: 32px;
+            font-weight: 400;
+            font-family: Staatliches;
+            border-radius: 25px;
+            background: #FAF6F6;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 313px;
+            height: 60px;
+            border: 1px solid #f6f6f600;
+            cursor: pointer;
+		    transition-duration: 0.4s;
+        }
+
+
+        .LoginButt:hover {
+            background: #3eb489;
+            color: white;
+        }
+
+        .PButt {
+            padding-top: 2.1em;
+            padding-bottom: 1em;
+        }
+
+        .SignUp {
+            color: white;
+            text-decoration: underline;
+            
+        }
     @media (min-width: 75em){
 
         body {
@@ -50,7 +100,6 @@ import SiteLayout from '../layouts/Layout.astro';
 
         .LetsConnect {
             padding-top: 0.7em;
-            padding-bottom: 1em;
         }
 
         .LP {
@@ -154,35 +203,6 @@ import SiteLayout from '../layouts/Layout.astro';
             font-size: 16px;
             padding-bottom: 2.3em;
         }
-
-        /* .Circ1 {
-            position: absolute; 
-            transform: translate(-50%, -50%); 
-            height: 25em; 
-            width:  50em; 
-            border-radius: 25em 25em 0 0; 
-            top: 60.6%;
-            left: 15%;
-            z-index: -1;
-            background: rgba(41.55, 108.38, 40.19, 0.20); 
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin: 0px;
-        } */
-
-        /* .Circ2 {
-            rotate: 180deg;
-            position: absolute; 
-            transform: translate(-50%, -50%); 
-            height: 10em; 
-            width:  20em; 
-            border-radius: 10em 10em 0 0; 
-            bottom: 110%;
-            left: 96%;
-            z-index: -1;
-            background: rgba(41.55, 108.38, 40.19, 0.20); 
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin: 0px;
-        } */
     }
     </style>
 </SiteLayout>
