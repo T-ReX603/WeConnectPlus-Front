@@ -37,209 +37,214 @@ import SiteLayout from '../layouts/Layout.astro';
 </div>
 
 <style>
-	/* MOBILE 
-	---------------------------------------------------------------------
-	*/
+		/* MOBILE 
+		---------------------------------------------------------------------
+		*/
 
-	body {
-		margin: 0em;
-	}
-
-	.title {
-            display: flex;
-            align-items: center;
-            margin-left: 0em;
-			size: 0em;
-			font-size: 0em;
+		body {
 			margin: 0em;
-        }
-		
-		.text {
-            color: white;
-            font-size: 5em;
-        }
+		}
+
+		.title {
+	            display: flex;
+	            align-items: center;
+	            margin-left: 0em;
+				size: 0em;
+				font-size: 0em;
+				margin: 0em;
+	        }
+			
+			.text {
+	            color: white;
+	            font-size: 5em;
+	        }
 
 
-		.container {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 0em;
-            color: black;
-        }
+			.container {
+	            display: flex;
+	            flex-wrap: wrap;
+	            margin-top: 0em;
+	            color: black;
+	        }
 
-	.Image {
-		margin-top: 0em;
-		margin-left: 0em;
-		height: 70vh;
-		width: auto;
-		object-fit: cover;
-	}
+		.Image {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			object-fit: cover;
+			flex-shrink: 0;
+		}
 
-	.Content {
-		height: 80vh;
-		width: 112vh;
-		background: rgba(255, 253.94, 253.94, 0.80); 
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-		border-radius: 3px; 
+		.Content {
+			height: 80vh;
+			width: 112vh;
+			background: rgba(255, 253.94, 253.94, 0.80); 
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+			border-radius: 3px; 
 
-	}
+		}
 
-	.Name {
-		font-size: 4em;
-		margin-left: 1em;
-		margin-top: 0.5em;
-		margin-bottom: 0em;
-	}
+		.Name {
+			font-size: 4em;
+			margin-left: 1em;
+			margin-top: 0.5em;
+			margin-bottom: 0em;
+		}
 
-	.AgeRange {
-		font-size: 2em;
-		margin-left: 2em;
-		margin-top: 0em;
-	}
+		.AgeRange {
+			font-size: 2em;
+			margin-left: 2em;
+			margin-top: 0em;
+		}
 
-	.ConnectThrough {
-		font-size: 2em;
-		margin-left: 2em;
-		margin-top: 1.6em;
-		margin-bottom: 0em;
-	}
+		.ConnectThrough {
+			font-size: 2em;
+			margin-left: 2em;
+			margin-top: 1.6em;
+			margin-bottom: 0em;
+		}
 
-	.tags {
-		margin: 0.5em;
-	}
+		.tags {
+			margin: 0.5em;
+		}
 
-	.TagList {
-		margin: 0em;
-		width: 9em;
-		
-	}
+		.TagList {
+			margin: 0em;
+			width: 9em;
+			
+		}
 
-	.Gamer {
-		color: white;
-		display: block;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		margin-left: 0.9em;
-		background: #4680F0; 
-		border-radius: 15px;
-		padding-left: 1em;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-		font-size: 1em;
-	}
+		.Gamer {
+			color: white;
+			display: block;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			margin-left: 0.9em;
+			background: #4680F0; 
+			border-radius: 15px;
+			padding-left: 1em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			font-size: 1em;
+		}
 
-	.GamerImg {
-		width: 3vh;
-		margin-left: 1.5em;
-		margin-right: 1em;
-	}
+		.GamerImg {
+			width: 3vh;
+			margin-left: 1.5em;
+			margin-right: 1em;
+		}
 
-	.AbtMe {
-		margin-top: 5em;
-		margin-left: 2em;
-		font-size: 2em;
-		margin-bottom: 0.3em;
-	}
+		.AbtMe {
+			margin-top: 5em;
+			margin-left: 2em;
+			font-size: 2em;
+			margin-bottom: 0.3em;
+		}
 
-	.AbtMeContent {
-		margin-top: 0em;
-		margin-left: 4em;
-	}
+		.AbtMeContent {
+			margin-top: 0em;
+			margin-left: 4em;
+		}
 
-	.ButtContainer {
-		display: flex;
-		justify-content: space-evenly;
-		text-align: center;
-		align-items: center;
-		margin-top: 15em;
-		
-
-	}
-
-	.LetsChatter {
-		display: flex;
-		justify-content: space-evenly;
-		text-align: center;
-		align-items: center;
-		border: none;
-		background: #3AE27D; 
-		border-radius: 30px;
-		font-family: Staatliches;
-		color: white;
-		font-size: 2em;
-		padding-left: 5em;
-		padding-right: 4em;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-		transition-duration: 0.2s;
-
-	}
-
-	.LetsChatter:hover {
-            background: #3eb489;
-            color: white;
-			cursor: pointer;
-	}
-	
-	.ButtImg {
-		text-align: center;
-            width: 4vh;
-            height: 4vh;
-		padding-left: 1em;
-		
-		
-	}
-
-	.NavBarContainer {
-		padding-top: 2em;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.NavBar {
-		text-align: center;
-            list-style-type: none;
+		.ButtContainer {
 			display: flex;
 			justify-content: space-evenly;
 			text-align: center;
 			align-items: center;
-			flex-wrap: wrap;
-            margin: 0;
-            overflow: hidden;
-            width: 40%;
-            background: rgba(255, 253.94, 253.94, 0.80); 
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-            border-radius: 1px; border: 1px #F6F6F6 solid;
-			padding-left: 0em;
-        }
+			margin-top: 15em;
+			
 
-        .NavIcon {
+		}
 
-        float: left;
-        }
+		.LetsChatter {
+			display: flex;
+			justify-content: space-evenly;
+			text-align: center;
+			align-items: center;
+			border: none;
+			background: #3AE27D; 
+			border-radius: 30px;
+			font-family: Staatliches;
+			color: white;
+			font-size: 2em;
+			padding-left: 5em;
+			padding-right: 4em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			transition-duration: 0.2s;
 
-        .NavIcon .NavButtLink {
-        display: block;
-        color: white;
-        text-align: center;
-        padding-top:  16px;
-        padding-bottom:  16px;
-        text-decoration: none;
-        }
+		}
 
-        .NavButt:hover{
-        background: rgba(0, 0, 0, 0.05); 
-        border-radius: 25%;
-    }
+		.LetsChatter:hover {
+	            background: #3eb489;
+	            color: white;
+				cursor: pointer;
+		}
+		
+		.ButtImg {
+			text-align: center;
+	            width: 4vh;
+	            height: 4vh;
+			padding-left: 1em;
+			
+			
+		}
 
-        .NavButt {
+		.NavBarContainer {
+			padding-top: 2em;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-            width: 5vh;
-            height: 5vh;
-        }
+		.NavBar {
+			text-align: center;
+	            list-style-type: none;
+				display: flex;
+				justify-content: space-evenly;
+				text-align: center;
+				align-items: center;
+				flex-wrap: wrap;
+	            margin: 0;
+	            overflow: hidden;
+	            width: 100%;
+	            background: rgba(255, 253.94, 253.94, 0.80); 
+	            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+	            border-radius: 1px; border: 1px #F6F6F6 solid;
+				padding-left: 0em;
+	        }
+
+	        .NavIcon {
+
+	        float: left;
+	        }
+
+	        .NavIcon .NavButtLink {
+	        display: block;
+	        color: white;
+	        text-align: center;
+	        padding-top:  16px;
+	        padding-bottom:  16px;
+	        text-decoration: none;
+	        }
+
+	        .NavButt:hover{
+	        background: rgba(0, 0, 0, 0.05); 
+	        border-radius: 25%;
+	    }
+
+	        .NavButt {
+
+	            width: 5vh;
+	            height: 5vh;
+	        }
 
 	/* DESKTOP 
 	------------------------------------------------------------------------
